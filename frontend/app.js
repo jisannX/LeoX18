@@ -2,7 +2,7 @@ document.getElementById('predict-form').addEventListener('submit', async functio
     event.preventDefault();
     let features = document.getElementById('features').value.split(',').map(Number);
 
-    const response = await fetch('https://leox18.onrender.com/predict', {  // Use your actual backend URL
+    const response = await fetch('https://leox18-1.onrender.com', {  // Use your actual backend URL
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ features })
